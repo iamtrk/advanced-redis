@@ -1,0 +1,1 @@
+'ll be focused on PERSISTENCE concepts with through explnation of each of the conf parameters.
