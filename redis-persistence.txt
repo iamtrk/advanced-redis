@@ -1,4 +1,7 @@
-'ll be focused on PERSISTENCE concepts with through explnation of each of the conf parameters.
+Its not reckommended to use default persistence settings in Prod environment
+
+Always commentout SAVE conf in config file & use BGSAVE.
+BGSAVE cann't be configured in conf file, so needs to setup a CRON to run BGSAVE periodically.
 
 Difference between SAVE & BGSAVE.
 
