@@ -1,1 +1,6 @@
 'll be focused on PERSISTENCE concepts with through explnation of each of the conf parameters.
+
+Difference between SAVE & BGSAVE.
+
+  ==> SAVE blocks while BGSAVE doesn't
+  ==> SAVE can be configured in redis.config, BGSAVE can't be configured.
