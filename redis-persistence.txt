@@ -7,3 +7,9 @@ Difference between SAVE & BGSAVE.
 
   ==> SAVE blocks while BGSAVE doesn't
   ==> SAVE can be configured in redis.config, BGSAVE can't be configured.
+
+If the redis server is already in production with default configuration, SAVE config can be changed 
+with CONFIG SET command.
+
+To remove ll SAVE options, run CONFIG SET "".
+To update this change in redis.config file , run CONFIG REWRITE( supported from redis 2.8).
