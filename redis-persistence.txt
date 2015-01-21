@@ -11,5 +11,5 @@ Difference between SAVE & BGSAVE.
 If the redis server is already in production with default configuration, SAVE config can be changed 
 with CONFIG SET command.
 
-To remove ll SAVE options, run CONFIG SET "".
+To remove all SAVE options, run CONFIG SET "".
 To update this change in redis.config file , run CONFIG REWRITE( supported from redis 2.8).
