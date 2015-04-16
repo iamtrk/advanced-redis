@@ -1,4 +1,5 @@
-Its not reckommended to use default persistence settings in Prod environment
+Its not reckommended to use default persistence settings in Prod environment.
+Resource usage spike happens during snapshotting.
 
 Always commentout SAVE conf in config file & use BGSAVE.
 BGSAVE cann't be configured in conf file, so needs to setup a CRON to run BGSAVE periodically.
