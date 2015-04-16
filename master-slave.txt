@@ -24,6 +24,6 @@ backend seo_redis_write
 
     mode tcp
 
-    server  nmc-revlab10  172.20.20.126:6379 check inter 6000 rise 3 fall 3 weight 100
+    server  MASTER check inter 6000 rise 3 fall 3 weight 100
 
-    server  nmc-revlab9   172.20.20.125:6379 check inter 6000 rise 3 fall 3 weight 100 backup
+    server  SLAVE check inter 6000 rise 3 fall 3 weight 100 backup
