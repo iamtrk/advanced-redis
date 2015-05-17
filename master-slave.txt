@@ -27,3 +27,5 @@ backend seo_redis_write
     server  MASTER check inter 6000 rise 3 fall 3 weight 100
 
     server  SLAVE check inter 6000 rise 3 fall 3 weight 100 backup
+
+NOTE: Change the slave conf to accept reads. This can be done by commenting out readonly-slave parameter in slave conf file. When current master is down, slave needs to be made master by running the command slaveof no one.
