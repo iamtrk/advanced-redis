@@ -4,7 +4,7 @@ Resource usage spike happens during snapshotting.
 Always commentout SAVE conf in config file & use BGSAVE.
 BGSAVE cann't be configured in conf file, so needs to setup a CRON to run BGSAVE periodically.
 
-Difference between SAVE & BGSAVE.
+Difference between SAVE & BGSAVE. 
 
   ==> SAVE blocks while BGSAVE doesn't
   ==> SAVE can be configured in redis.config, BGSAVE can't be configured.
