@@ -5,7 +5,7 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 /*
 * Out of box Redis client for Java based on Jedis.
-* Implemented Singleton design pattern based on Enum. 
+* Implemented Singleton design pattern based on Enum. - inspired from Joshua Block's Effective Java
 */
 public enum Redis {
     // Singleton instance.
