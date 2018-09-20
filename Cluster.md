@@ -22,4 +22,11 @@ Redis cluster :
     9) Hash Tags - technique to make sure different keys are hashed to same slot.
     String in the braces only is used for slot hashing. Ex: {url:example.com}.footer
     Useful to store different objects of seo data for a specific url.
+    
+    10) First add a cluster to the node:
+    redis-trib.rb add-node <New server> <Any one server in the cluster>. It will just 
+    add the node to the cluster, without much work happening.
+    
+    11) redis-trib.rb add-node/fix/rebalance/reshard/del-node/check <any cluster server> for operations on 
+    the cluster. 
 
